@@ -9,9 +9,13 @@ public class CalculatorService {
 
     public BigDecimal calculate(String strA, String strB, Operation operation) throws Exception {
         if (NumberValidator.isValidNumber(strA) && NumberValidator.isValidNumber(strB)) {
+
+            String newStrA = replacingCommaWithPeriod(strA);
+            String newStrB = replacingCommaWithPeriod(strB);
+
             BigDecimal result;
-            BigDecimal a = new BigDecimal(strA);
-            BigDecimal b = new BigDecimal(strB);
+            BigDecimal a = new BigDecimal(newStrA);
+            BigDecimal b = new BigDecimal(newStrB);
             switch (operation) {
                 case PLUS:
                     result = a.add(b);
@@ -27,13 +31,7 @@ public class CalculatorService {
         throw new Exception("Incorrect data");
     }
 
-
-    public BigDecimal minus(String strA, String strB) throws Exception {
-        if (NumberValidator.isValidNumber(strA) && NumberValidator.isValidNumber(strB)) {
-            BigDecimal a = new BigDecimal(strA);
-            BigDecimal b = new BigDecimal(strB);
-            return a.subtract(b);
-        }
-        throw new Exception("Incorrect data");
+    private String replacingCommaWithPeriod(String str) {
+        return str.replace(",", ".");
     }
 }
