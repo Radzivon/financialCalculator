@@ -12,6 +12,8 @@ import javafx.scene.text.Text;
 import service.CalculatorService;
 
 import java.net.URL;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -43,8 +45,17 @@ public class Controller implements Initializable {
     }
 
     private void initCalculateButton() {
+
+        DecimalFormatSymbols symbols = DecimalFormatSymbols.getInstance();
+        symbols.setGroupingSeparator(' ');
+
+        String pattern = "#,###,###,###,###.######";
+
+        DecimalFormat df = new DecimalFormat(pattern, symbols);
+
         calculateButton.setOnAction(event -> {
             errorText.setText("");
+            resultTextField.setText("");
 
             String aString = aTextField.getText();
             String bString = bTextField.getText();
@@ -52,7 +63,8 @@ public class Controller implements Initializable {
             Operation operation = operationChoiceBox.getValue();
 
             try {
-                resultTextField.setText(calculatorService.calculate(aString, bString, operation).toString());
+                String result = df.format(calculatorService.calculate(aString, bString, operation));
+                resultTextField.setText(result);
             } catch (NumberFormatException e) {
                 errorText.setText("Incorrect number format");
             } catch (Exception e) {
