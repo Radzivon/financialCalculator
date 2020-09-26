@@ -41,7 +41,6 @@ public class Controller implements Initializable {
         calculatorService = new CalculatorService();
         initChoiceBox();
         initCalculateButton();
-
     }
 
     private void initCalculateButton() {
