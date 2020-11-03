@@ -3,17 +3,32 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <Button fx:id="calculateButton" layoutX="461.0" layoutY="315.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Calculate" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="461.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="315.0" />
-        <TextField fx:id="aTextField" layoutX="34.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="187.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="406.0" AnchorPane.topAnchor="226.0" />
-        <Text layoutX="348.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B:" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="348.0" AnchorPane.rightAnchor="267.1494140625" AnchorPane.topAnchor="232.0" />
-        <TextField fx:id="bTextField" layoutX="427.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="187.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="427.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="226.0" />
-        <TextField fx:id="resultTextField" editable="false" layoutX="196.0" layoutY="315.0" prefHeight="31.0" prefWidth="235.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="315.0" />
+        <Button fx:id="calculateButton" layoutX="405.0" layoutY="315.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="128.0" text="Calculate" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="467.0" AnchorPane.topAnchor="315.0" />
+        <TextField fx:id="aTextField" layoutX="21.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="128.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="851.0" AnchorPane.topAnchor="226.0" />
+        <TextField fx:id="bTextField" layoutX="297.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="119.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="584.0" AnchorPane.topAnchor="226.0" />
+        <TextField fx:id="resultTextField" editable="false" layoutX="196.0" layoutY="315.0" prefHeight="27.0" prefWidth="189.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="615.0" AnchorPane.topAnchor="315.0" />
         <Text layoutX="114.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result:" AnchorPane.bottomAnchor="163.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="469.3623046875" AnchorPane.topAnchor="320.0" />
         <Text fx:id="errorText" fill="RED" layoutX="239.0" layoutY="289.1865234375" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="198.0" AnchorPane.bottomAnchor="211.0" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="273.0" />
-        <ChoiceBox fx:id="operationChoiceBox" layoutX="239.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="150.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="239.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="226.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" />
+        <ChoiceBox fx:id="operationChoiceBoxFirst" layoutX="169.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="83.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="748.0" AnchorPane.topAnchor="226.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" />
       <Text layoutX="52.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Радион Владислав" wrappingWidth="149.99999856948853" />
       <Text layoutX="52.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 группа 4 курс" />
+      <TextField fx:id="dTextField" layoutX="569.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="119.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="842.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="226.0" />
+      <TextField fx:id="cTextField" layoutX="561.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="119.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="561.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="226.0" />
+      <ChoiceBox fx:id="operationChoiceBoxSecond" layoutX="450.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="83.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="467.0" AnchorPane.topAnchor="226.0" />
+      <ChoiceBox fx:id="operationChoiceBoxThird" layoutX="739.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="83.0" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="739.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="225.0" />
+      <Text layoutX="263.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(" wrappingWidth="27.6708984375" AnchorPane.bottomAnchor="210.90625" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="709.3291015625" AnchorPane.topAnchor="161.40625">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Text>
+      <Text layoutX="691.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text=")" wrappingWidth="27.6708984375" AnchorPane.bottomAnchor="207.90625" AnchorPane.leftAnchor="691.0" AnchorPane.rightAnchor="281.3291015625" AnchorPane.topAnchor="164.40625">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="roundingChoiceBox" layoutX="198.0" layoutY="367.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="83.0" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="719.0" AnchorPane.topAnchor="367.0" />
+      <Button fx:id="roundingButton" layoutX="340.0" layoutY="365.0" mnemonicParsing="false" text="Round" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="596.0" AnchorPane.topAnchor="365.0" />
     </children>
 </AnchorPane>
